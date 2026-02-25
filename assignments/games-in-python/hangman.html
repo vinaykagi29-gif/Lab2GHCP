@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hangman (Browser)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Arial, sans-serif; padding: 1rem; }
+    #word { font-size: 2rem; letter-spacing: .5rem; margin: 1rem 0; }
+    #wrong { color: #c00; }
+    #controls { margin-top: 1rem; }
+    input[type=text]{ padding: .4rem; font-size: 1rem; width: 10rem }
+    button { padding: .4rem .7rem; font-size: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Hangman (Browser)</h1>
+  <div id="hangman-pic"></div>
+  <div id="word">_ _ _ _ _</div>
+  <div>Wrong guesses: <span id="wrong">None</span></div>
+  <div>Attempts left: <span id="attempts">6</span></div>
+
+  <div id="controls">
+    <input id="guess" placeholder="letter or word" autocomplete="off" />
+    <button id="submit">Guess</button>
+    <button id="new">New Game</button>
+  </div>
+
+  <script src="hangman.js"></script>
+</body>
+</html>
